@@ -3,20 +3,19 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <div className='bg-white h-15 w-screen flex p-3'>
-      <div className=' ml-10 mr-5'>
-        <Github className='bg-blue-200 rounded-2xl cursor-pointer'/>
+    <nav className="bg-white w-full px-4 sm:px-8 py-3 flex items-center justify-between">
+      <div className="flex items-center gap-3">
+        <Github className="bg-blue-200 rounded-xl p-1 cursor-pointer w-8 h-8 sm:w-9 sm:h-9" />
+        <span className="font-semibold text-lg cursor-pointer">
+          GitFinder
+        </span>
       </div>
-      <div className='mr-290'>
-        <span className='font-semibold cursor-pointer'>GitFinder</span>
+
+      <div className="flex items-center gap-4">
+        <Sun className="cursor-pointer w-6 h-6 sm:w-7 sm:h-7" />
+        <PersonStanding className="cursor-pointer w-6 h-6 sm:w-7 sm:h-7" />
       </div>
-      <div className='mr-10'>
-        <Sun className='cursor-pointer'/>
-      </div>
-      <div>
-     <PersonStanding className='cursor-pointer'/>
-      </div>
-    </div>
+    </nav>
   )
 }
 
