@@ -1,5 +1,5 @@
 import { Github, Sun ,PersonStanding} from 'lucide-react'
-import React from 'react'
+
 
 const Navbar = () => {
   return (
